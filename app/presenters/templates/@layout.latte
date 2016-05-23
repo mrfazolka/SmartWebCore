@@ -1,0 +1,37 @@
+{**
+ * @param string   $basePath web base path
+ * @param array    $flashes  flash messages
+ *}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>{ifset title}{include title|striptags} | {/ifset}Nette Sandbox</title>
+
+	<link rel="stylesheet" href="{$basePath}/css/gen/public.min.css">
+	<meta name="viewport" content="width=device-width">
+	{block head}{/block}
+</head>
+
+<body>
+    <div id="ajax-spinner" class="" style="display: none;"></div>
+    <script src="{$basePath}/js/gen/public.min.js"></script>
+    {if $ajaxOn}
+	<script>
+	    $(function(){
+		$.nette.init();
+	    });
+	</script>
+    {/if}
+    {if $user->isAllowed("sprava-obsahu")}
+	<script src="{$basePath}/js/gen/quickAdmin.min.js"></script>
+    {/if}
+    {block scripts}
+    {/block}
+
+    <div n:foreach="$flashes as $flash" n:class="flash, 'alert', 'alert-'.$flash->type" role="alert">{$flash->message}</div>
+
+    {include content}
+</body>
+</html>

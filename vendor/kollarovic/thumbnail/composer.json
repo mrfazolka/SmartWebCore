@@ -1,0 +1,29 @@
+{
+	"name": "kollarovic/thumbnail",
+	"description" : "Generating image thumbnails",
+	"keywords": ["thumbnail", "nette", "latte", "image"],
+	"license": "New BSD",
+
+	"authors": [
+	{
+		"name": "Mario Kollarovic",
+		"email": "kollarovic@gmail.com"
+	}
+	],
+
+	"require": {
+		"php": ">=5.3.1",
+		"nette/nette": "~2.0@rc"
+	},
+
+	"require-dev": {
+		"nette/tester": "~1.3",
+		"mockery/mockery": "~0.9"
+	},
+
+	"autoload": {
+		"psr-0": {
+			"Kollarovic\\Thumbnail": "src/"
+		}
+	}
+}

@@ -1,0 +1,34 @@
+#
+# WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+# https://nette.org/security-warning
+#
+parameters:
+	thumbnail:
+		thumbPathMask: 'images/app/thumbs/{filename}-{width}x{height}.{extension}'
+
+php:
+	date.timezone: Europe/Prague
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+
+extensions:
+	thumbnail: Kollarovic\Thumbnail\DI\Extension
+	cmps: App\MyExtensions\CmpsExtension
+
+thumbnail:
+	thumbPathMask: 'images/thumbs/{width}x{height}/{filename}-{width}x{height}.{extension}'
+	placeholder: 'http://path/images/noimg.jpg'
+
+services:
+	- App\Model\LoginManager
+	- App\RouterFactory
+	- App\Acl
+	router: @App\RouterFactory::createRouter

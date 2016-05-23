@@ -1,0 +1,26 @@
+{
+    "name": "SmartWebCmps",
+    "authors": [
+        {
+            "name": "mrfazolka",
+            "email": "mrfazolka@gmail.com"
+        }
+    ],
+    "config": {
+        "vendor-dir": "/"
+    },
+    "repositories": [
+	{
+	    "type": "vcs",
+	    "url": "https://ohanzlk@bitbucket.org/ohanzlk/textcmp.git"
+	},
+	{
+	    "type": "vcs",
+	    "url": "https://ohanzlk@bitbucket.org/ohanzlk/basecmp.git"
+	}
+    ],
+    "require": {
+	"BaseCmp": "*",
+	"TextCmp": "*"
+    }
+}

@@ -1,0 +1,36 @@
+<div class="navbar-header">
+    {*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Zobrazit menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>*}
+    <a class="navbar-brand" n:href="Homepage:, mode=>null">Harmonydesign.cz</a>
+    
+            
+</div>
+    
+<div class="quickSearch">
+    {*form quickSearchForm}
+        {label quickSearch, style=>"float: left; margin: 5px 5px 0px 0px" /} {input quickSearch, class=>"form-control text", style=>"float: left; width: 200px;"} {input send, class=>"btn btn-primary button hledat-btn"}
+    {/form*}
+</div>
+
+<!-- /.navbar-header -->
+{if $user->isLoggedIn()}
+    <ul class="nav navbar-top-links navbar-right">
+        {*<a href="#" class="user-info">*}<b>{$user->identity->username}</b>{*</a>*}
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-user">
+                {*if $user->isAllowed("sprava-obsahu")}<li><a n:href="Excel:import"><i class="fa fa-upload fa-fw"></i> Excel import</a></li>{/if*}
+                <li><a n:href=":Homepage:signOut"><i class="fa fa-sign-out fa-fw"></i> Odhlásit</a></li>
+            </ul>
+            <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+    </ul>
+{/if}
+<!-- /.navbar-top-links -->

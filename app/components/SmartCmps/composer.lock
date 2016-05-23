@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "cb1e81c9f5309e1ff5112f72e39087ab",
+    "content-hash": "2ba0c8a87d25b6dc694286704c2fb0c6",
+    "packages": [
+        {
+            "name": "BaseCmp",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://ohanzlk@bitbucket.org/ohanzlk/basecmp.git",
+                "reference": "d12821868b085319ec0059621fdb5a6b6661f9ed"
+            },
+            "type": "library",
+            "authors": [
+                {
+                    "name": "mrfazolka",
+                    "email": "mrfazolka@gmail.com"
+                }
+            ],
+            "description": "Base for SmartCmps",
+            "time": "2016-05-23 19:15:34"
+        },
+        {
+            "name": "TextCmp",
+            "version": "1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://ohanzlk@bitbucket.org/ohanzlk/textcmp.git",
+                "reference": "a3fa8e47512ea48912be30b846b26513c25a4860"
+            },
+            "type": "library",
+            "authors": [
+                {
+                    "name": "mrfazolka",
+                    "email": "mrfazolka@gmail.com"
+                }
+            ],
+            "description": "SmartCmp for text editing",
+            "time": "2016-05-23 19:14:35"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
