@@ -3,8 +3,8 @@ parameters:
 
 nette:
 	database:
-		dsn: 'mysql:host=wm93.wedos.net;dbname=d108121_harmony'
-		user: w108121_harmony
-		password: djdPNDcW
+		dsn: 'mysql:host=xxx.host.net;dbname=dbname'
+		user: wUser
+		password: pass
 		options:
 			lazy: yes
