@@ -1,1 +1,1 @@
-<?php //netteCache[01]000070a:2:{s:4:"time";s:21:"0.28417700 1464033376";s:10:"serialized";b:1;}?>a:1:{s:37:"App\Components\TextCmp\TextCmpFactory";a:3:{s:11:"cmpFullName";s:7:"TextCmp";s:14:"inQuickAddMenu";b:0;s:5:"title";s:4:"Text";}}
+<?php //netteCache[01]000070a:2:{s:4:"time";s:21:"0.65591400 1464485019";s:10:"serialized";b:1;}?>a:1:{s:37:"App\Components\TextCmp\TextCmpFactory";a:3:{s:11:"cmpFullName";s:7:"TextCmp";s:14:"inQuickAddMenu";b:0;s:5:"title";s:4:"Text";}}

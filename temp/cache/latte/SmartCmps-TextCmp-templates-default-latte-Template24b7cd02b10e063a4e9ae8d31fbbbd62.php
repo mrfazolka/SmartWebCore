@@ -13,9 +13,7 @@ list($_b, $_g, $_l) = $template->initialize('8a650e9e2c', 'html')
 //
 if (!function_exists($_b->blocks['content'][] = '_lb85ebb878a6_content')) { function _lb85ebb878a6_content($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
 ;if ($user->isAllowed("sprava-obsahu")) { ?>
-        <div class="componentTextControlButtonWrap"><a href="<?php echo Latte\Runtime\Filters::escapeHtml($_control->link("edit!"), ENT_COMPAT) ?>
-#<?php echo Latte\Runtime\Filters::escapeHtml(Latte\Runtime\Filters::safeUrl($uniqueId), ENT_COMPAT) ?>" class="button ajax">Upravit</a></div>
-	<div id="<?php echo Latte\Runtime\Filters::escapeHtml($cmpId."InlineEdit", ENT_COMPAT) ?>" contenteditable="true">
+        	<div id="<?php echo Latte\Runtime\Filters::escapeHtml($cmpId."InlineEdit", ENT_COMPAT) ?>" contenteditable="true">
 	    <?php echo $row->text ?>
 
 	</div>
@@ -52,7 +50,7 @@ if (!function_exists($_b->blocks['content'][] = '_lb85ebb878a6_content')) { func
     //			]
 		var lastSaveStatus = false;
 		var ck = CKEDITOR.inline( <?php echo Latte\Runtime\Filters::escapeJs($cmpId."InlineEdit") ?> );
-		ck.config.toolbar = [];
+//		ck.config.toolbar = [];
 		ck.on( 'instanceReady', function( ev ) {
 		    var editor = ev.editor;
 		    editor.setReadOnly( false );
@@ -74,6 +72,18 @@ if (!function_exists($_b->blocks['content'][] = '_lb85ebb878a6_content')) { func
 //			console.log("start edit", this.getElementsByClassName("cke_top")[0]);
 //			this.getElementsByClassName("cke_top")[0].style.display = "none";
 //		    });
+
+		    $("#"+editor.name).mousedown(function(ev) {
+			if(!$(this).is(":focus")){
+			    ev.preventDefault();
+			    $.nette.ajax({
+				url: <?php echo Latte\Runtime\Filters::escapeJs($_control->link("edit!")) ?>
+
+			    }).done(function(){
+				$('#<?php echo $cmpId."InlineEdit" ?>').focus();
+			    });
+			}
+		    });
 		}); //end: ck.on( 'instanceReady', function( ev )
 		
 		ck.on( 'blur', function( ev ) {
