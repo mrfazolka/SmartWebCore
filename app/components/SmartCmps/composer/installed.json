@@ -1,14 +1,14 @@
 [
     {
         "name": "BaseCmp",
-        "version": "1.0.2",
-        "version_normalized": "1.0.2.0",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
         "source": {
             "type": "git",
             "url": "https://ohanzlk@bitbucket.org/ohanzlk/basecmp.git",
-            "reference": "d12821868b085319ec0059621fdb5a6b6661f9ed"
+            "reference": "ae58e1550de1e2b26648fa548105d9f8a2d3eea5"
         },
-        "time": "2016-05-23 19:15:34",
+        "time": "2016-05-28 23:18:08",
         "type": "library",
         "installation-source": "source",
         "authors": [
@@ -21,14 +21,14 @@
     },
     {
         "name": "TextCmp",
-        "version": "1.1.5",
-        "version_normalized": "1.1.5.0",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
         "source": {
             "type": "git",
             "url": "https://ohanzlk@bitbucket.org/ohanzlk/textcmp.git",
-            "reference": "a3fa8e47512ea48912be30b846b26513c25a4860"
+            "reference": "c7120f04e5651b3f36b941d60fa2f7964745085b"
         },
-        "time": "2016-05-23 19:14:35",
+        "time": "2016-05-29 00:24:12",
         "type": "library",
         "installation-source": "source",
         "authors": [

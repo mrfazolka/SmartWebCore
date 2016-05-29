@@ -1,9 +1,0 @@
-services:
-    modelKomponentz:
-        class: App\Components\BaseStandardCmp\Model\Komponenty
-    modelStranky:
-        class: App\Components\BaseStandardCmp\Model\Stranky
-
-production < common:
-
-development < common:
