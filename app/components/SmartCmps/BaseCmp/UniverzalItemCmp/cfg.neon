@@ -1,0 +1,6 @@
+services:
+    - App\Components\UniverzalItem\Model\UniverzalItems
+
+production < common:
+
+development < common:

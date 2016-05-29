@@ -1,1 +1,42 @@
-[]
+[
+    {
+        "name": "BaseCmp",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://ohanzlk@bitbucket.org/ohanzlk/basecmp.git",
+            "reference": "ae58e1550de1e2b26648fa548105d9f8a2d3eea5"
+        },
+        "time": "2016-05-28 23:18:08",
+        "type": "library",
+        "installation-source": "source",
+        "authors": [
+            {
+                "name": "mrfazolka",
+                "email": "mrfazolka@gmail.com"
+            }
+        ],
+        "description": "Base for SmartCmps"
+    },
+    {
+        "name": "TextCmp",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://ohanzlk@bitbucket.org/ohanzlk/textcmp.git",
+            "reference": "c7120f04e5651b3f36b941d60fa2f7964745085b"
+        },
+        "time": "2016-05-29 00:24:12",
+        "type": "library",
+        "installation-source": "source",
+        "authors": [
+            {
+                "name": "mrfazolka",
+                "email": "mrfazolka@gmail.com"
+            }
+        ],
+        "description": "SmartCmp for text editing"
+    }
+]

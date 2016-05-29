@@ -1,0 +1,12 @@
+{
+    "name": "TextCmp",
+    "description": "SmartCmp for text editing",
+    "version": "1.0.0",
+    
+    "authors": [
+        {
+            "name": "mrfazolka",
+            "email": "mrfazolka@gmail.com"
+        }
+    ]
+}
