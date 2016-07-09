@@ -13,22 +13,19 @@ class SmartPagesPresenterBase extends BasePresenter
      * @var \App\Components\BaseStandardCmp\Model\Stranky */
     public $modelStranky;
     
-    public function actionDefault($smartSlug, $id)
-    {
-//	dump($smartSlug);
+    public function beforeRender() {
+	parent::beforeRender();
+	$smartSlug = $this->action;
 	if($page = $this->modelStranky->findOneBy(array("slug"=>"/".$smartSlug))){
-	    $pageMethod = "page".ucfirst($page->cmpbase_sablony->template);
-	    if(method_exists($this, $pageMethod))
-		$id ? $this->$pageMethod($id) : $this->$pageMethod();
 //	    dump($page);exit;
 	    $this->setView($page->cmpbase_sablony->template);
 	}
-//	else{
-////	    exit;
-//	    if($smartSlug==null)
-//		$this->redirect("Homepage:default");
-//	    $presenterName = Nette\Utils\Strings::firstUpper($smartSlug);
-//	    $this->redirect("$presenterName:$id"); //id je zde view
-//	}
+//{{	else{
+//////	    exit;
+////	    if($smartSlug==null)
+////		$this->redirect("Homepage:default");
+////	    $presenterName = Nette\Utils\Strings::firstUpper($smartSlug);
+////	    $this->redirect("$presenterName:$id"); //id je zde view
+////	}
     }
 }
